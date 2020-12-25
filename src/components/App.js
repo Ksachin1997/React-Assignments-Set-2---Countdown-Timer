@@ -16,6 +16,7 @@ const App = () => {
       return;
     }
     if (isNaN(event.target.value)) {
+      clearTimeout(id);
       setTimer(0);
       return;
     } else {
