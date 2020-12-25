@@ -30,6 +30,8 @@ const App = () => {
         setTimer(timer - 1);
         setF(f + 1);
       }, 1000);
+    } else {
+      clearTimeout(id);
     }
   }, [f]);
 
