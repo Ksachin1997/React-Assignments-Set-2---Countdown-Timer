@@ -11,6 +11,11 @@ const App = () => {
   let id = 0;
 
   const handleKeyDown = (event) => {
+    if (event.key === "0") {
+      clearTimeout(id);
+      setTimer(0);
+      return;
+    }
     if (event.keyCode !== 13) {
       clearTimeout(id);
       return;
